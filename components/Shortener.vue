@@ -1,6 +1,5 @@
 <template>
     <Card>
-
         <form @submit="shorten">
             <label class="block text-gray-700 text-xl font-bold mb-2" for="link">
                 Link
@@ -12,9 +11,6 @@
                 <i class="material-icons">content_cut</i>
                 Shorten
             </button>
-            <div>
-                {{data}}
-            </div>
         </form>
     </Card>
 </template>
@@ -34,7 +30,7 @@ const shorten = async(e) => {
         }
     })
 
-    alert(data.value.link)
+    alert(JSON.stringify(data.value))
 }
 </script>
 

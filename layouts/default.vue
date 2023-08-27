@@ -1,6 +1,6 @@
 <template >
     <div class="h-screen flex flex-col gap-6">
-        <header class="shadow-sm bg-white">
+        <header class="shadow-sm bg-white px-4">
             <nav class="container mx-auto py-4 flex justify-between">
                 <NuxtLink class="font-bold" to="/">Zhortener</NuxtLink>
                 <ul class="flex gap-4">
@@ -16,7 +16,7 @@
                 </ul>
             </nav>
         </header>
-        <main class="container mx-auto flex flex-col flex-1">
+        <main class="container mx-auto flex flex-col flex-1 px-4 ">
             <slot />
         </main>
         <footer class="p-4 bg-gray-800 shadow-sm text-white text-center text-xs">
